@@ -38,13 +38,14 @@ exports.walletspassphrase = {
 **After, you can run exchange**
 
 ```
-cd ~/opentrade/databaseServer
-[sudo] forever start main.js
-cd ~/opentrade/accountsserver
-git checkout master
-[sudo] forever start main.js
-cd  ~/opentrade/server
-[sudo] forever start main.js
+cd databaseServer
+sudo forever start main.js
+cd ..
+cd accountsserver
+sudo forever start main.js
+cd ..
+cd  server
+sudo forever start main.js
 ```
 
 In your browser address bar, type https://127.0.0.1
